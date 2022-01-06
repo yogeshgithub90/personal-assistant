@@ -1,0 +1,33 @@
+logging:
+  level:
+    org.springframework: ERROR
+    com.ourcompany: DEBUG
+  file:
+    path: "../logs/notes/"
+
+spring:
+  profiles:
+    active: development
+  main:
+    banner-mode: off
+  datasource:
+    url: jdbc:oracle:thin:@localhost:1521/xe
+    username: notes
+    password: notes
+    driver-class-name: oracle.jdbc.OracleDriver
+  jpa:
+    database-platform: org.hibernate.dialect.Oracle10gDialect
+    hibernate:
+      ddl-auto: update
+  application:
+    name: notes-service
+  config:
+    import: optional:configserver:http://localhost:8888
+
+
+  eureka:
+    client:
+      register-with-eureka: true
+      fetch-registry: true
+      service-url:
+        defaultZone: http://localhost:8761/eureka/
