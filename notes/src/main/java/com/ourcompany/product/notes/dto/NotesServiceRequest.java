@@ -19,6 +19,4 @@ import java.util.List;
 @Builder
 public class NotesServiceRequest {
     private List<Note> notes = new ArrayList<>();
-    @NotNull
-    private Long userId;
 }

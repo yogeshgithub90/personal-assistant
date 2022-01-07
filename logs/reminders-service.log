@@ -1,0 +1,33 @@
+2022-01-08 01:34:18.399  INFO 19244 --- [main] c.o.p.reminders.RemindersApplication     : Starting RemindersApplication using Java 11.0.8 on LHTU05CG0181JP7 with PID 19244 (C:\Users\ysharm13\Desktop\personal-assistant\personal-assistant\reminders\target\classes started by ysharm13 in C:\Users\ysharm13\Desktop\personal-assistant\personal-assistant)
+2022-01-08 01:34:18.399 DEBUG 19244 --- [main] c.o.p.reminders.RemindersApplication     : Running with Spring Boot v2.6.2, Spring v5.3.14
+2022-01-08 01:34:18.399  INFO 19244 --- [main] c.o.p.reminders.RemindersApplication     : The following profiles are active: development
+2022-01-08 01:34:21.821  INFO 19244 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-01-08 01:34:21.822  INFO 19244 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.56]
+2022-01-08 01:34:22.192  INFO 19244 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-01-08 01:34:22.859  INFO 19244 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-01-08 01:34:23.021  INFO 19244 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.3.Final
+2022-01-08 01:34:23.529  INFO 19244 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-01-08 01:34:23.799  INFO 19244 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2022-01-08 01:34:24.517  INFO 19244 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2022-01-08 01:34:24.563  INFO 19244 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.Oracle10gDialect
+2022-01-08 01:34:37.874  INFO 19244 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-01-08 01:34:39.713  INFO 19244 --- [main] com.netflix.discovery.DiscoveryClient    : Initializing Eureka in region us-east-1
+2022-01-08 01:34:39.729  INFO 19244 --- [main] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2022-01-08 01:34:39.765  INFO 19244 --- [main] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2022-01-08 01:34:39.765  INFO 19244 --- [main] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2022-01-08 01:34:39.765  INFO 19244 --- [main] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2022-01-08 01:34:39.765  INFO 19244 --- [main] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2022-01-08 01:34:39.765  INFO 19244 --- [main] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2022-01-08 01:34:39.765  INFO 19244 --- [main] com.netflix.discovery.DiscoveryClient    : Application version is -1: true
+2022-01-08 01:34:39.765  INFO 19244 --- [main] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2022-01-08 01:34:40.121  INFO 19244 --- [main] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2022-01-08 01:34:40.121  INFO 19244 --- [main] com.netflix.discovery.DiscoveryClient    : Starting heartbeat executor: renew interval is: 30
+2022-01-08 01:34:40.121  INFO 19244 --- [main] c.n.discovery.InstanceInfoReplicator     : InstanceInfoReplicator onDemand update allowed rate per min is 4
+2022-01-08 01:34:40.137  INFO 19244 --- [main] com.netflix.discovery.DiscoveryClient    : Discovery Client initialized at timestamp 1641585880137 with initial instances count: 3
+2022-01-08 01:34:40.137  INFO 19244 --- [main] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1641585880137, current=UP, previous=STARTING]
+2022-01-08 01:34:40.137  INFO 19244 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_REMINDERS-SERVICE/host.docker.internal:reminders-service:8082: registering service...
+2022-01-08 01:34:40.229  INFO 19244 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_REMINDERS-SERVICE/host.docker.internal:reminders-service:8082 - registration status: 204
+2022-01-08 01:34:40.608  INFO 19244 --- [main] c.o.p.reminders.RemindersApplication     : Started RemindersApplication in 23.988 seconds (JVM running for 24.745)
+2022-01-08 01:35:00.191  INFO 19244 --- [http-nio-8082-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-01-08 01:35:00.308  INFO 19244 --- [http-nio-8082-exec-1] c.o.p.r.controller.RemindersController   : userId is {0}
+2022-01-08 01:36:02.478  INFO 19244 --- [http-nio-8082-exec-3] c.o.p.r.controller.RemindersController   : RemindersServiceRequest(reminders=[])
