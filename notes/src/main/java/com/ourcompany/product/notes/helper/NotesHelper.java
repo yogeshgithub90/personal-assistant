@@ -11,7 +11,7 @@ import java.util.stream.Collectors;
 
 public interface NotesHelper {
     static List<Note> createNotesFromRequest(@NotNull NotesServiceRequest request){
-        return request.getNotes().stream().map(note -> Note.builder().title(note.getTitle()).note(note.getNote()).keyword(note.getKeyword()).build()).collect(Collectors.toList());
+        return request.getNotes().stream().map(note -> Note.builder().userId(note.getUserId()).title(note.getTitle()).note(note.getNote()).keyword(note.getKeyword()).build()).collect(Collectors.toList());
     }
 
     static NotesServiceResponse createNoteResponseFromNote(@NotNull Note note){
