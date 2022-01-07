@@ -58,3 +58,6 @@
 2022-01-08 01:34:43.855  INFO 22452 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_NOTES-SERVICE/host.docker.internal:notes-service:8081: registering service...
 2022-01-08 01:34:43.981  INFO 22452 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_NOTES-SERVICE/host.docker.internal:notes-service:8081 - registration status: 204
 2022-01-08 01:34:44.262  INFO 22452 --- [main] c.o.p.n.l.NotesServiceApplication        : Started NotesServiceApplication in 22.698 seconds (JVM running for 23.78)
+2022-01-08 01:39:43.449  INFO 22452 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2022-01-08 01:44:43.466  INFO 22452 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2022-01-08 01:49:43.469  INFO 22452 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration

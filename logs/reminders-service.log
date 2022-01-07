@@ -31,3 +31,6 @@
 2022-01-08 01:35:00.191  INFO 19244 --- [http-nio-8082-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
 2022-01-08 01:35:00.308  INFO 19244 --- [http-nio-8082-exec-1] c.o.p.r.controller.RemindersController   : userId is {0}
 2022-01-08 01:36:02.478  INFO 19244 --- [http-nio-8082-exec-3] c.o.p.r.controller.RemindersController   : RemindersServiceRequest(reminders=[])
+2022-01-08 01:39:39.799  INFO 19244 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2022-01-08 01:44:39.807  INFO 19244 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2022-01-08 01:49:39.818  INFO 19244 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
