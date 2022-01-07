@@ -20,7 +20,7 @@ public class NotesController {
     @PostMapping("/save")
     @ResponseBody
     public NotesServiceResponse saveNotes(@RequestBody NotesServiceRequest request){
-        return NotesHelper.createNoteResponseFromNote(notesService.saveNote(request));
+        return NotesHelper.createNoteResponseFromNotes(notesService.saveAllNotes(request));
     }
 
     @GetMapping("/get/user/{userId}")
@@ -29,7 +29,7 @@ public class NotesController {
         return NotesHelper.createNoteResponseFromNotes(notesService.fetchNotesForUserId(userId));
     }
 
-    @GetMapping("/get/key/{keyword}")
+    @GetMapping("/get/key/{key}/")
     @ResponseBody
     public NotesServiceResponse getNotesByKeyword(@PathVariable String key){
         return NotesHelper.createNoteResponseFromNotes(notesService.fetchNotesForKeyword(key));
