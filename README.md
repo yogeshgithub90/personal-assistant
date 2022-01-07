@@ -19,5 +19,5 @@ You can invoke all services by the sequences given below:
 <br/>
 <br/>
 <br/>
-<footer>Thanks and Regards</footer>
-Team
+<footer>Thanks and Regards.</footer>
+Team project
