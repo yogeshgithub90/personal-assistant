@@ -27,7 +27,8 @@ public class NotesController {
     @GetMapping("/get/user/{userId}")
     @ResponseBody
     public NotesServiceResponse getNotesByUserId(@PathVariable Long userId){
-        return NotesHelper.createNoteResponseFromNotes(notesService.fetchNotesForUserId(userId));
+    	NotesServiceResponse response=  NotesHelper.createNoteResponseFromNotes(notesService.fetchNotesForUserId(userId));
+    	return response;
     }
 
     @GetMapping("/get/key/{key}/")
