@@ -1,4 +1,5 @@
 # Personal Assistant
+
 ## _Your own personal assistant, always there._
 
 This is a Personal assistant to assist you in your daily works, like keeping your notes, keeping your remainders, 
@@ -90,5 +91,3 @@ http://localhost:8989/notes/get/user/3
 ```
 
 For any help, please mail me at yogesh.sharma.art@gmail.com.
-
-Thanks
