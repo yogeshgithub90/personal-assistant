@@ -3,6 +3,9 @@
 *.iws
 *.iml
 *.ipr
+*.logs
+.project
+.settings
 
 ###Logs Folder ###
-Logs
+logs
