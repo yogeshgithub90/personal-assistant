@@ -13,12 +13,12 @@ import javax.persistence.*;
 @AllArgsConstructor
 @Builder
 public class Note {
-    @Id
-    @SequenceGenerator(name = "note_seq", sequenceName = "note_seq", initialValue = 100)
-    @GeneratedValue(strategy = GenerationType.AUTO, generator = "note_seq")
-    private long id;
-    private long userId;
-    private String note;
-    private String title;
-    private String keyword;
+	@Id
+	@SequenceGenerator(name = "note_seq", sequenceName = "note_seq", initialValue = 100)
+	@GeneratedValue(strategy = GenerationType.AUTO, generator = "note_seq")
+	private long id;
+	private long userId;
+	private String note;
+	private String title;
+	private String keyword;
 }

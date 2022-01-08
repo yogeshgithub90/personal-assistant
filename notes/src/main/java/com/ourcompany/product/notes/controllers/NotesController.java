@@ -33,7 +33,8 @@ public class NotesController {
 
     @GetMapping("/get/key/{key}/")
     @ResponseBody
-    public NotesServiceResponse getNotesByKeyword(@PathVariable String key){
-        return NotesHelper.createNoteResponseFromNotes(notesService.fetchNotesForKeyword(key));
-    }
+	public NotesServiceResponse getNotesByKeyword(@PathVariable String key) {
+		NotesServiceResponse response = NotesHelper.createNoteResponseFromNotes(notesService.fetchNotesForKeyword(key));
+		return response;
+	}
 }
