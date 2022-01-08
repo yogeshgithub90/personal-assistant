@@ -19,6 +19,7 @@ public interface NotesHelper {
     }
 
     static NotesServiceResponse createNoteResponseFromNotes(@NotNull List<Note> notes){
-        return NotesServiceResponse.builder().statusCode(HttpStatus.ACCEPTED).resultDescription("Success").notes(notes).build();
+    	NotesServiceResponse response = NotesServiceResponse.builder().statusCode(HttpStatus.ACCEPTED).resultDescription("Success").notes(notes).build();
+    	return response;
     }
 }

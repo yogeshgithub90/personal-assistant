@@ -17,10 +17,10 @@ import java.util.List;
 @AllArgsConstructor
 @Builder
 public class NotesServiceResponse {
-    @NotNull
-    private long transactionId;
-    @NotNull
-    private HttpStatus statusCode;
-    private String resultDescription;
-    private List<Note> notes;
+	@NotNull
+	private long transactionId;
+	@NotNull
+	private HttpStatus statusCode;
+	private String resultDescription;
+	private List<Note> notes;
 }

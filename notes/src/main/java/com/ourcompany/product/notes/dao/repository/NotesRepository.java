@@ -9,5 +9,6 @@ import java.util.List;
 @Repository
 public interface NotesRepository extends CrudRepository<Note, Long> {
     List<Note> getAllByUserId(long userId);
+    
     List<Note> getAllByKeyword(String keyword);
 }
