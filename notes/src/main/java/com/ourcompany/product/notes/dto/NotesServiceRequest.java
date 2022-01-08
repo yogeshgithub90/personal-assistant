@@ -1,5 +1,6 @@
 package com.ourcompany.product.notes.dto;
 
+import com.ourcompany.product.notes.domain.Note;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
@@ -8,6 +9,8 @@ import org.springframework.http.HttpStatus;
 
 import javax.validation.Valid;
 import javax.validation.constraints.NotNull;
+import java.util.ArrayList;
+import java.util.List;
 
 @Data
 @NoArgsConstructor
@@ -15,10 +18,5 @@ import javax.validation.constraints.NotNull;
 @Valid
 @Builder
 public class NotesServiceRequest {
-    private String noteTitle;
-    @NotNull
-    private String note;
-    private String noteKeyWords;
-    @NotNull
-    private Long userId;
+    private List<Note> notes = new ArrayList<>();
 }

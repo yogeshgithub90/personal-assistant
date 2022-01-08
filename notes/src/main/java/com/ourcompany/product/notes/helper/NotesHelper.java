@@ -7,10 +7,11 @@ import org.springframework.http.HttpStatus;
 
 import javax.validation.constraints.NotNull;
 import java.util.List;
+import java.util.stream.Collectors;
 
 public interface NotesHelper {
-    static Note createNoteFromRequest(@NotNull NotesServiceRequest request){
-        return Note.builder().note(request.getNote()).userId(request.getUserId()).keyword(request.getNoteKeyWords()).title(request.getNoteTitle()).build();
+    static List<Note> createNotesFromRequest(@NotNull NotesServiceRequest request){
+        return request.getNotes().stream().map(note -> Note.builder().userId(note.getUserId()).title(note.getTitle()).note(note.getNote()).keyword(note.getKeyword()).build()).collect(Collectors.toList());
     }
 
     static NotesServiceResponse createNoteResponseFromNote(@NotNull Note note){

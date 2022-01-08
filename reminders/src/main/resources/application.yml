@@ -1,11 +1,11 @@
 server:
-  port: 8081
+  port: 8082
 logging:
   level:
     org.springframework: ERROR
     com.ourcompany: DEBUG
   file:
-    name: "logs/notes-service.log"
+    name: "logs/reminders-service.log"
 
 spring:
   profiles:
@@ -22,7 +22,7 @@ spring:
     hibernate:
       ddl-auto: update
   application:
-    name: notes-service
+    name: reminders-service
   config:
     import: optional:configserver:http://localhost:8888
 

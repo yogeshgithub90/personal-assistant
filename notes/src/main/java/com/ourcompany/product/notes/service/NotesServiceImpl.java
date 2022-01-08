@@ -10,19 +10,20 @@ import org.springframework.stereotype.Service;
 import java.util.List;
 
 @Service
-public class NotesServiceImpl implements NotesService{
+public class NotesServiceImpl implements NotesService {
     @Autowired
     private NotesDao notesDao;
 
 
     @Override
     public Note saveNote(NotesServiceRequest request) {
-        return notesDao.save(NotesHelper.createNoteFromRequest(request));
+        //TODO: saving only one note
+        return null;
     }
 
     @Override
     public List<Note> saveAllNotes(NotesServiceRequest request) {
-        return null;
+        return notesDao.saveAll(NotesHelper.createNotesFromRequest(request));
     }
 
     @Override
