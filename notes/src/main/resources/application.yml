@@ -12,15 +12,12 @@ spring:
     active: development
   main:
     banner-mode: off
-  datasource:
-    url: jdbc:oracle:thin:@localhost:1521/xe
-    username: notes
-    password: notes
-    driver-class-name: oracle.jdbc.OracleDriver
-  jpa:
-    database-platform: org.hibernate.dialect.Oracle10gDialect
-    hibernate:
-      ddl-auto: update
+  data:
+    mongodb:
+      host: localhost
+      port: 27017
+      database: notes
+
   application:
     name: notes-service
   config:
@@ -33,3 +30,5 @@ spring:
       fetch-registry: true
       service-url:
         defaultZone: http://localhost:8761/eureka/
+    instance:
+      appname: NOTES-SERVICE

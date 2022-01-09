@@ -26,7 +26,7 @@ public class NotesController {
 
     @GetMapping("/get/user/{userId}")
     @ResponseBody
-    public NotesServiceResponse getNotesByUserId(@PathVariable Long userId){
+    public NotesServiceResponse getNotesByUserId(@PathVariable String userId){
         return NotesHelper.createNoteResponseFromNotes(notesService.fetchNotesForUserId(userId));
     }
 

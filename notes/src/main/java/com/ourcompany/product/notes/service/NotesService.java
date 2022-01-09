@@ -9,6 +9,6 @@ public interface NotesService {
     Note saveNote(NotesServiceRequest request);
     List<Note> saveAllNotes(NotesServiceRequest request);
 
-    List<Note> fetchNotesForUserId(Long userId);
+    List<Note> fetchNotesForUserId(String userId);
     List<Note> fetchNotesForKeyword(String keyword);
 }

@@ -7,6 +7,6 @@ import java.util.List;
 public interface NotesDao {
     Note save(Note note);
     List<Note> saveAll(List<Note> note);
-    List<Note> getNotesByUserId(Long userId);
+    List<Note> getNotesByUserId(String userId);
     List<Note> getNotesByKeyword(String keyword);
 }

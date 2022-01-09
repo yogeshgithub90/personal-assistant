@@ -24,7 +24,7 @@ public class NotesDaoImpl implements NotesDao{
     }
 
     @Override
-    public List<Note> getNotesByUserId(Long userId) {
+    public List<Note> getNotesByUserId(String userId) {
         return notesRepository.getAllByUserId(userId);
     }
 

@@ -16,5 +16,6 @@
 		<module>eureka</module>
 		<module>gateway</module>
 		<module>reminders</module>
+        <module>common-service</module>
     </modules>
 </project>

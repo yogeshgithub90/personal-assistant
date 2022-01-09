@@ -27,7 +27,7 @@ public class NotesServiceImpl implements NotesService {
     }
 
     @Override
-    public List<Note> fetchNotesForUserId(Long userId) {
+    public List<Note> fetchNotesForUserId(String userId) {
         return notesDao.getNotesByUserId(userId);
     }
 
