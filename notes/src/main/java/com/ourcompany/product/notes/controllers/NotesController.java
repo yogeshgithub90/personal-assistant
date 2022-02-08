@@ -26,7 +26,8 @@ public class NotesController {
 
     @GetMapping("/get/user/{userId}")
     @ResponseBody
-    public NotesServiceResponse getNotesByUserId(@PathVariable String userId){
+    public NotesServiceResponse getNotesByUserId(@PathVariable String userId, @RequestParam("tag") String tag){
+        System.out.println(tag);
         return NotesHelper.createNoteResponseFromNotes(notesService.fetchNotesForUserId(userId));
     }
 

@@ -1,0 +1,34 @@
+{
+  "notes": [
+    {
+      "userId": 2,
+      "note": "Nosql is a database where sql does not work",
+      "title": "Nosql",
+      "keyword": "Nosql"
+    },
+    {
+      "userId": 4,
+      "note": "Mongo is a Nosql Database",
+      "title": "Mongo",
+      "keyword": "Mongo"
+    },
+    {
+      "userId": 5,
+      "note": "Dynamo db is a document database",
+      "title": "dynamo",
+      "keyword": "dynamo"
+    },
+    {
+      "userId": 3,
+      "note": "Oracle is required for domains like, banking, or payment or any transaction related work",
+      "title": "ORACLE",
+      "keyword": "oracle"
+    },
+    {
+      "userId": 3,
+      "note": "Oracle is easy to understand and people are good at RDBMS because its taught from school",
+      "title": "ORACLE",
+      "keyword": "oracle"
+    }
+  ]
+}
